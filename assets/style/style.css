@@ -16,101 +16,200 @@
   box-sizing: border-box;
 }
 
-header .logo {
-  height: 1.5rem;
-  margin-top: 0.5rem;
-  margin-left: 1.5rem;
-  cursor: pointer;
+body {
+  background-color: var(--preto);
+  color: var(--branco);
 }
 
-header .container {
-  padding: 1rem;
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fonte-titulo);
+}
+
+p {
+  font-family: var(--fonte-paragrafo);
+}
+
+/* ---------------------- NAV BAR --------------------*/
+
+header {
+  position: fixed;
+}
+
+header #container {
   display: flex;
-  justify-content: space-between;
+  z-index: 0;
+  overflow: auto;
+  padding: 2rem;
+  width: 85rem;
+  background-color: #14141407;
 }
 
-header .container nav {
+header .logo {
+  height: 2rem;
+}
+
+header .navegacao {
+  margin-top: 0.4rem;
   margin-left: 10rem;
-  margin-top: 0.7rem;
   position: absolute;
 }
 
-header .container nav a {
-  font-family: var(--fonte-paragrafo);
-  color: var(--branco);
-  font-weight: 100;
-  margin: 0.5rem;
-}
-
-header .container nav a spam {
+header nav spam {
   font-weight: 600;
 }
 
-header .icone {
-  width: 2.5rem;
-  height: 2.3rem;
-  display: inline-flex;
-  margin-left: 39.5rem;
-  background-color: rgba(0, 0, 0, 0.111);
-  padding: 0.1rem;
-  transition: all 1s ease-out;
+header nav a {
+  width: 20rem;
+  font-family: var(--fonte-titulo);
+  font-weight: 100;
+  color: white;
+  margin-left: 2rem;
 }
 
-header div .ativado {
-  width: 14rem;
-  height: 2.3rem;
-  display: inline-flex;
-  margin-left: 39.5rem;
-  background-color: rgba(0, 0, 0, 0.111);
-  padding: 0.1rem;
-  border: 1px solid white;
-  transition: all 1s ease-in-out;
-}
-
-header #lupa {
+header .lupa {
   height: 1.5rem;
-  margin-top: 0.3rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  margin-top: 0.1rem;
   cursor: pointer;
 }
 
-header .busca {
-  padding: 0.2rem;
-  outline: none;
-  border: none;
-  border-radius: 0.5rem;
-  height: 2rem;
-  background-size: 1.2rem;
-  background-repeat: no-repeat;
-  background-position: 0.3rem;
-  background-color: rgba(0, 0, 0, 0);
-  caret-color: white;
-  color: var(--branco);
-  opacity: 0;
-  position: absolute;
-  margin-left: 10rem;
-  transition: all 0.5s linear;
+header .linha {
+  opacity: 0%;
+  height: 1.7rem;
+  border: 1px solid white;
+  margin-left: 0.4rem;
 }
 
 header .ativada {
-  padding: 0.2rem;
-  outline: none;
-  border: none;
-  border-radius: 0.5rem;
-  height: 2rem;
-  background-size: 1.2rem;
-  background-repeat: no-repeat;
-  background-position: 0.3rem;
-  background-color: rgba(0, 0, 0, 0);
-  caret-color: white;
-  color: var(--branco);
-  opacity: 100;
-  position: absolute;
-  margin-left: 2.5rem;
-  transition: all 0.5s linear;
+  opacity: 100%;
+  height: 1.7rem;
+  border: 1px solid white;
+  margin-left: 0.4rem;
+  transition: all 0.5s;
 }
 
-body {
-  background-color: var(--preto);
+header .pesquisa {
+  width: 0rem;
+  margin-left: 72rem;
+  display: flex;
+  padding: 0.2rem;
+}
+
+header .ativa {
+  width: 13.5rem;
+  border: 2px solid white;
+  margin-left: 60rem;
+  display: flex;
+  padding: 0.2rem;
+  transition: all 0.3s linear;
+}
+
+header .input {
+  width: 0%;
+  margin-left: 0.3rem;
+  border: none;
+  outline: none;
+  background-color: #14141400;
+  color: var(--branco);
+}
+
+header .input::placeholder {
+  color: var(--branco);
+}
+
+header .ativo {
+  width: 100%;
+  margin-left: 0.3rem;
+  border: none;
+  outline: none;
+  color: var(--branco);
+  transition: all 0.5s;
+}
+
+/* --------------------- MAIN-MOVIE -----------------*/
+
+main .main-movie {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) 100%),
+    url(/img/capa-homem-aranha.jpg);
+
+  height: 42rem;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-movie .descricao {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 30rem;
+}
+
+.main-movie .container {
+  margin-top: 12rem;
+  margin-left: 3rem;
+}
+
+.main-movie .title {
+  font-size: 2rem;
+}
+
+.main-movie .assistir {
+  text-align: center;
+  align-items: center;
+  display: inline-flex;
+  cursor: pointer;
+
+  padding: 0.2rem 0.6rem 0.2rem 0.8rem;
+  width: 8rem;
+  height: 2.5rem;
+
+  background-color: var(--branco);
+
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--fonte-paragrafo);
+
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.main-movie .play-btn {
+  height: 2rem;
+  margin-right: 0.3rem;
+}
+
+.main-movie .info {
+  text-align: center;
+  align-items: center;
+  display: inline-flex;
+  position: absolute;
+  cursor: pointer;
+
+  padding: 0.4rem 0.8rem 0.4rem 1rem;
+  height: 2.5rem;
+  width: 13rem;
+  margin-left: 1rem;
+
+  background-color: rgba(0, 0, 0, 0.234);
+  backdrop-filter: blur(10px);
+
+  color: var(--branco);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--fonte-paragrafo);
+
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.main-movie .info-icon {
+  height: 1.5rem;
+  margin-right: 0.3rem;
 }
