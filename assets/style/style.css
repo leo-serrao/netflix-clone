@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat:wght@300;500;600&family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+  --branco: white;
+
+  --fonte-titulo: 'Outfit', sans-serif;
+  --fonte-paragrafo: 'Montserrat', sans-serif;
+}
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .logo {
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+header .container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container nav {
+  margin-left: 10rem;
+  margin-top: 0.7rem;
+  position: absolute;
+}
+
+header .container nav a {
+  font-family: var(--fonte-paragrafo);
+  color: var(--branco);
+  font-weight: 100;
+  margin: 0.5rem;
+}
+
+header .container nav a spam {
+  font-weight: 600;
+}
+
+header .icone {
+  width: 2.5rem;
+  height: 2.3rem;
+  display: inline-flex;
+  margin-left: 39.5rem;
+  background-color: rgba(0, 0, 0, 0.111);
+  padding: 0.1rem;
+  transition: all 1s ease-out;
+}
+
+header div .ativado {
+  width: 14rem;
+  height: 2.3rem;
+  display: inline-flex;
+  margin-left: 39.5rem;
+  background-color: rgba(0, 0, 0, 0.111);
+  padding: 0.1rem;
+  border: 1px solid white;
+  transition: all 1s ease-in-out;
+}
+
+header #lupa {
+  height: 1.5rem;
+  margin-top: 0.3rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+header .busca {
+  padding: 0.2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  height: 2rem;
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: 0.3rem;
+  background-color: rgba(0, 0, 0, 0);
+  caret-color: white;
+  color: var(--branco);
+  opacity: 0;
+  position: absolute;
+  margin-left: 10rem;
+  transition: all 0.5s linear;
+}
+
+header .ativada {
+  padding: 0.2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  height: 2rem;
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: 0.3rem;
+  background-color: rgba(0, 0, 0, 0);
+  caret-color: white;
+  color: var(--branco);
+  opacity: 100;
+  position: absolute;
+  margin-left: 2.5rem;
+  transition: all 0.5s linear;
+}
+
+body {
+  background-color: var(--preto);
+}
