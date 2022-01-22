@@ -9,6 +9,10 @@
   --fonte-paragrafo: 'Montserrat', sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 * {
   text-decoration: none;
   margin: 0;
@@ -134,7 +138,7 @@ header .ativo {
 
 main .main-movie {
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) 100%),
-    url(/img/capa-homem-aranha.jpg);
+    url(../img/capa-homem-aranha.jpg);
 
   height: 42rem;
   background-size: cover;
