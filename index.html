@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style/style.css" />
     <link rel="icon" type="image" size="16x16" href="img/logo-head.png" />
+
+    <!--             OWL CSS          -->
+    <link rel="stylesheet" href="assets/style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/style/owl/owl.theme.default.min.css">
+
     <title>Início - Netflix</title>
   </head>
+
   <body>
+
     <header>
       <div id="container" class="container">
         <a href="#"><img class="logo" src="assets/img/logo.png" /></a>
         <nav class="navegacao">
-          <a href="#"><spam>Início</spam></a>
-          <a href="#">Séries</a>
-          <a href="#">Filmes</a>
-          <a href="#">Documentários</a>
+          <a href=""><spam>Início</spam></a>
+          <a href="#series">Séries</a>
+          <a href="#filmes">Filmes</a>
+          <a href="#">Bombando</a>
+          <a href="#">Minha Lista</a>
         </nav>
         <div id="pesquisa" class="pesquisa">
           <img src="assets/img/lupa.png" alt="lupinha" id="lupa" class="lupa">
@@ -26,18 +34,70 @@
         </div>
       </div>
     </header>
+
     <main>
       <div class="main-movie">
         <div class="container">
           <h2 class="title">Homem-Aranha: Sem Volta Pra Casa</h2>
           <p class="descricao">Peter Parker é desmascarado e não consegue mais separar sua vida normal dos grandes riscos de ser um super-herói. Quando ele pede ajuda ao Doutor Estranho, os riscos se tornam ainda mais perigosos, e o forçam a descobrir o que realmente significa ser o Homem-Aranha.</p>
           <div class="botoes">
-          <button role="button" class="assistir"><img src="assets/img/Figura-Play-PNG.png" alt="play" class="play-btn"> Assistir</button>
-          <button role="button" class="info"><img src="assets/img/info-icon.png" alt="info icon" class="info-icon"> Mais Informações</button>
+          <button role="button" class="assistir"><i class="fas fa-play"></i> Assistir</button>
+          <button role="button" class="info"><i class="fas fa-info-circle"></i> Mais Informações</button>
         </div>
         </div>
       </div>
     </main>
+
+    <div id="filmes" class="carrossel-filmes">
+      <h3 class="filmes-titulo"> Filmes </h3>
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/eternos.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/miranha-devolta-aolar.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/harry.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/007.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/chefinho.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/venom.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/clifford.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/demonslayer.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/encanto.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/espiritos.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/esquadraosuicida.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/freeguy.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/ghostbusters.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/oracao.jpg" alt=""></div>
+        <div class="item"><img class="box-filme" src="assets/img/capas-filmes/shangshi.jpg" alt=""></div>
+      </div>
+    </div>
+
+    <div id="series" class="carrossel-series">
+      <h3 class="series-titulo"> Séries </h3>
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img class="box-series" src="assets/img/capas-series/peaky.jpg" alt=""></div>
+        <div class="item"><img class="box-series" src="assets/img/capas-series/lucifer.jpg" alt=""></div>
+        <div class="item"><img class="box-series" src="assets/img/capas-series/ozark.jpg" alt=""></div>
+        <div class="item"><img class="box-series" src="assets/img/capas-series/morty.jpg" alt=""></div>
+        <div class="item"><img class="box-series" src="assets/img/capas-series/riverdale.jpg" alt=""></div>
+        <div class="item"><img class="box-series" src="assets/img/capas-series/witcher.jpg" alt=""></div>
+        <div class="item"><img class="box-series" src="assets/img/capas-series/vikings.jpg" alt=""></div>
+        <div class="item"><img class="box-series" src="assets/img/capas-series/cobrakai.jpg" alt=""></div>
+        <div class="item"><img class="box-series" src="assets/img/capas-series/flash.jpg" alt=""></div>
+        <div class="item"><img class="box-series" src="assets/img/capas-series/round6.jpg" alt=""></div>
+        <div class="item"><img class="box-series" src="assets/img/capas-series/rebelde.jpg" alt=""></div>
+      </div>
+    </div>
+
+
+
+    
+
+    <script src="assets/js/script.js"></script>
+
+    <!--             AWESOME FONTS JS          -->
+    <script src="https://kit.fontawesome.com/20110927d8.js" crossorigin="anonymous"></script>
+
+    <!--             OWL JS          -->
+    <script src="assets/js/owl/jquery.min.js"></script>
+    <script src="assets/js/owl/owl.carousel.min.js"></script>
+    <script src="assets/js/owl/main.js"></script>
   </body>
-  <script src="assets/js/script.js"></script>
 </html>

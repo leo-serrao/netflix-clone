@@ -11,6 +11,7 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -42,6 +43,7 @@ p {
 
 header {
   position: fixed;
+  height: 100%;
 }
 
 header #container {
@@ -51,14 +53,17 @@ header #container {
   padding: 2rem;
   width: 85rem;
   background-color: #14141407;
+  margin-top: -1rem;
+  height: 16%;
 }
 
 header .logo {
-  height: 2rem;
+  height: 1.5rem;
+  margin-left: 1rem;
 }
 
 header .navegacao {
-  margin-top: 0.4rem;
+  margin-top: 0.3rem;
   margin-left: 10rem;
   position: absolute;
 }
@@ -69,10 +74,12 @@ header nav spam {
 
 header nav a {
   width: 20rem;
+  margin-left: 0.8rem;
+
+  color: white;
   font-family: var(--fonte-titulo);
   font-weight: 100;
-  color: white;
-  margin-left: 2rem;
+  font-size: 0.95rem;
 }
 
 header .lupa {
@@ -140,8 +147,10 @@ main .main-movie {
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) 100%),
     url(../img/capa-homem-aranha.jpg);
 
-  height: 42rem;
+  height: 45rem;
+
   background-size: cover;
+  box-shadow: inset 0px -40px 30px 0px var(--preto);
 
   display: flex;
   flex-direction: column;
@@ -175,6 +184,7 @@ main .main-movie {
   height: 2.5rem;
 
   background-color: var(--branco);
+  backdrop-filter: 10px;
 
   font-size: 1rem;
   font-weight: 600;
@@ -184,16 +194,20 @@ main .main-movie {
   border-radius: 0.3rem;
 }
 
-.main-movie .play-btn {
-  height: 2rem;
-  margin-right: 0.3rem;
+.main-movie .assistir:hover {
+  background-color: rgba(255, 255, 255, 0.316);
+  transition: all 0.3s linear;
+}
+
+.main-movie .fa-play {
+  font-size: 1.5rem;
+  margin-right: 0.6rem;
 }
 
 .main-movie .info {
   text-align: center;
   align-items: center;
   display: inline-flex;
-  position: absolute;
   cursor: pointer;
 
   padding: 0.4rem 0.8rem 0.4rem 1rem;
@@ -213,7 +227,55 @@ main .main-movie {
   border-radius: 0.3rem;
 }
 
-.main-movie .info-icon {
-  height: 1.5rem;
-  margin-right: 0.3rem;
+.main-movie .info:hover {
+  background-color: rgba(255, 255, 255, 0.316);
+  transition: all 0.3s linear;
+}
+
+.main-movie .fa-info-circle {
+  margin-right: 0.6rem;
+  font-size: 1.5rem;
+}
+
+/* ------------------ CARROSSEL FILMES -------------------*/
+
+.carrossel-filmes .box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 1.5%;
+}
+
+.carrossel-filmes {
+  margin-top: -5%;
+  margin-bottom: 2%;
+}
+
+.carrossel-filmes .item {
+  height: 80%;
+  width: 80%;
+}
+
+.carrossel-filmes .filmes-titulo {
+  margin-left: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ------------------ CARROSSEL SÉRIES -------------------*/
+
+.carrossel-series .series-titulo {
+  margin-left: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.carrossel-series .box-series {
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 1.5%;
+}
+
+.carrossel-series .item {
+  height: 80%;
+  width: 80%;
 }
