@@ -170,19 +170,15 @@ main .main-movie {
   align-items: flex-start;
 }
 
-.main-movie .descricao {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  max-width: 30rem;
-}
-
 .main-movie .container {
-  margin-top: 12rem;
+  margin-top: 20%;
   margin-left: 3rem;
 }
 
 .main-movie .title {
-  font-size: 2rem;
+  width: 40%;
+  margin-bottom: 3%;
+  margin-left: -1.5%;
 }
 
 .main-movie .assistir {
@@ -250,6 +246,9 @@ main .main-movie {
   font-size: 1.5rem;
 }
 
+body {
+  height: 200rem;
+}
 /* ------------------ CARROSSEL FILMES -------------------*/
 
 .carrossel-filmes .box-filme {
@@ -311,17 +310,17 @@ main .main-movie {
   width: 100%;
   height: 180%;
   background-color: rgba(0, 0, 0, 0.35);
-  transition: all 0.5s;
+  transition: all 0.5s linear;
 }
 
 .popup {
   background: var(--preto);
   border-radius: 1%;
   display: flex;
-
+  flex-direction: column;
   width: 65%;
-  height: 95%;
-  margin-top: 3.5%;
+  height: 100%;
+  margin-top: 7.5%;
 }
 
 .popup .header {
@@ -336,7 +335,7 @@ main .main-movie {
   box-shadow: inset 0px -40px 30px 0px var(--preto);
 }
 .popup .conteudo-header {
-  margin-top: 28%;
+  margin-top: 24%;
   padding: 5%;
 }
 
@@ -413,8 +412,134 @@ main .main-movie {
   border-style: none;
 
   position: absolute;
-  margin-top: -20%;
+  margin-top: -17%;
   margin-left: 56.5%;
 }
 
+.popup .titulo-popup {
+  width: 48%;
+  margin-left: -2.3%;
+  margin-bottom: 1%;
+}
+
 /* ------------------ POP UP INFO BODY -------------------*/
+
+.popup .conteudo-info {
+  display: flex;
+  padding: 2% 5%;
+
+  line-height: 150%;
+}
+.popup .descricao-info {
+  width: 70%;
+  margin-right: 5%;
+  font-size: 110%;
+}
+
+.popup .descricao-info .relevancia {
+  margin-bottom: 5%;
+
+  font-size: 90%;
+}
+
+.popup .descricao-info .relevancia span {
+  font-weight: bold;
+  color: #41c462;
+}
+
+.popup .descricao-info .relevancia .hd {
+  font-weight: lighter;
+  font-size: 75%;
+  color: var(--branco);
+
+  border: 1px solid #747474;
+  border-radius: 18%;
+
+  padding: 0 1%;
+}
+
+.popup .descricao-info .relevancia .idade {
+  width: 7%;
+  margin-bottom: -2.5%;
+}
+
+.popup .elenco {
+  width: 35%;
+  font-size: 85%;
+  flex-wrap: wrap;
+}
+
+.popup .elenco span {
+  color: #606060;
+}
+
+.popup .elenco p {
+  margin-bottom: 7%;
+}
+
+.popup .elenco a {
+  color: var(--branco);
+}
+
+.popup .elenco a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ POP UP TITULOS SEMELHANTES -------------------*/
+
+.titulos-semelhantes {
+  padding: 5%;
+  margin-bottom: 2%;
+}
+
+.titulos-semelhantes .grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.titulos-semelhantes .grid .card {
+  background-color: #2f2f2f;
+
+  margin-top: 2.5%;
+  margin-right: 3.3%;
+  width: 30%;
+  height: 23.5rem;
+
+  border-radius: 1.5%;
+}
+
+.titulos-semelhantes .card-header img {
+  width: 100%;
+  border-radius: 1.5% 1.5% 0 0;
+}
+
+.titulos-semelhantes .card .body {
+  padding: 6%;
+  margin-top: 10%;
+}
+
+.titulos-semelhantes .card .body h3 img {
+  width: 20%;
+  margin-bottom: -5.5%;
+  margin-right: 2%;
+}
+
+.titulos-semelhantes .card .body h3 {
+  font-weight: lighter;
+  width: 100%;
+}
+
+.titulos-semelhantes .card .body .classificacao {
+  display: flex;
+  margin-bottom: 8%;
+}
+
+.titulos-semelhantes .card .body .redondo {
+  width: 23%;
+  height: 2.3rem;
+}
+.titulos-semelhantes .card .info-card {
+  font-weight: lighter;
+  font-size: 85%;
+}
