@@ -246,9 +246,6 @@ main .main-movie {
   font-size: 1.5rem;
 }
 
-body {
-  height: 200rem;
-}
 /* ------------------ CARROSSEL FILMES -------------------*/
 
 .carrossel-filmes .box-filme {
@@ -260,7 +257,7 @@ body {
 
 .carrossel-filmes {
   margin-top: -5%;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .carrossel-filmes .item {
@@ -275,19 +272,23 @@ body {
 
 /* ------------------ CARROSSEL SÉRIES -------------------*/
 
-.carrossel-series .series-titulo {
+.carrossel-padrao {
+  margin-bottom: 5%;
+}
+
+.carrossel-padrao .padrao-titulo {
   margin-left: 3rem;
   margin-bottom: 0.5rem;
 }
 
-.carrossel-series .box-series {
+.carrossel-padrao .box-padrao {
   height: 100%;
   width: 100%;
   display: block;
   border-radius: 1.5%;
 }
 
-.carrossel-series .item {
+.carrossel-padrao .item {
   height: 80%;
   width: 80%;
 }
@@ -295,6 +296,8 @@ body {
 .item {
   cursor: pointer;
 }
+
+/* ------------------ CARROSSEL COMÉDIA -------------------*/
 
 /* ------------------ POP UP INFO HEADER -------------------*/
 
@@ -321,6 +324,7 @@ body {
   width: 65%;
   height: 100%;
   margin-top: 7.5%;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.322);
 }
 
 .popup .header {
@@ -490,12 +494,16 @@ body {
 .titulos-semelhantes {
   padding: 5%;
   margin-bottom: 2%;
+  background-color: var(--preto);
+  height: 200%;
+  box-shadow: 0px 8px 5px 5px rgba(0, 0, 0, 0.116);
 }
 
 .titulos-semelhantes .grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 5%;
 }
 
 .titulos-semelhantes .grid .card {
@@ -542,4 +550,43 @@ body {
 .titulos-semelhantes .card .info-card {
   font-weight: lighter;
   font-size: 85%;
+}
+
+.popup .divider {
+  height: 1px;
+  border: 1px solid #404040;
+  width: 96.5%;
+}
+
+/* ------------------ POP UP FOOTER -------------------*/
+
+.popup .popup-footer {
+  margin-top: 5%;
+}
+
+.popup .titulo-footer {
+  margin-bottom: 2%;
+}
+
+.popup .popup-footer p {
+  font-size: 85%;
+  margin-bottom: 2%;
+}
+
+.popup .popup-footer span {
+  color: #606060;
+}
+
+.popup .popup-footer a {
+  color: var(--branco);
+}
+
+.popup .popup-footer a:hover {
+  text-decoration: underline;
+}
+
+.popup .popup-footer .classificacao-footer img {
+  width: 4%;
+  margin-left: 1%;
+  margin-bottom: -1.5%;
 }
