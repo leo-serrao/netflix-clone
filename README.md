@@ -5,4 +5,4 @@
 </div>
 
 # Netflix Clone
-Porject made to clone the Netflix interface 
+Project made to clone the Netflix interface 
