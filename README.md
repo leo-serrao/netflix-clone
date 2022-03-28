@@ -4,5 +4,5 @@
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 </div>
 
-# Clone da Netflix
-Projeto de clone da página da Netflix utilizando HTML, CSS e JavaScript 
+# Netflix Clone
+Porject made to clone the Netflix interface 
